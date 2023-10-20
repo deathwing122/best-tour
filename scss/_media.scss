@@ -55,6 +55,28 @@
             }
         }
     }
+    .hotel {
+        &-info {
+            &__text {
+                width: 100%;
+            }
+            &__wrapper {
+                justify-content: space-between;
+            }
+            &__offer {
+                order: -1;
+            }
+            &__rating {
+                display: none;
+            }
+            &__title {
+                flex-basis: 100%;
+            }
+        }
+    }
+    .stars {
+        flex-basis: content !important;
+    }
 }
 
 @media (max-width: 576px) {
