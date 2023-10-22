@@ -1,4 +1,5 @@
 .hotel {
+    padding-bottom: 70px;
     &-info {
         display: flex;
         align-items: center;
@@ -18,8 +19,19 @@
         }
         &__description {
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 20px;
         }
+        &__map {
+            margin-top: 21px;
+        }
+        &__right {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-grid {
+        display: flex;
+        justify-content: space-between;
     }
 }
 .stars {
@@ -51,5 +63,108 @@
     &__counter {
         font-size: 14px;
         font-weight: 700;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.slider {
+    width: 730px;
+    &-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__next {
+            right: 18px;
+        }
+        &__prev {
+            left: 18px;
+        }
+    }
+}
+
+.booking {
+    padding: 30px 29px 30px  26px;
+    border-radius: 8px;
+    background: #0A223D;
+    max-height: 216px;
+    max-width: 350px;
+    height: 216px;
+    width: 100%;
+    font-family: Nunito;
+    color: #FFF;
+    &-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        margin-bottom: 9px;
+    }
+    &__button {
+        border-radius: 4px;
+        background: #EC1F46;
+        padding: 13px 0px;
+        margin-top: 17px;
+        width: 100%;
+    }
+}
+.map {
+    border-radius: 8px;
+    background: #0A223D;
+    max-width: 350px;
+    max-height: 213px;
+    width: 100%;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    &__tag {
+        font-size: 24px;
+        font-weight: 800;
+    }
+    &__start {
+        font-size: 10px;
+    }
+    &__per-room {
+        font-size: 12px;
+    }
+}
+.person-room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__description {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+.call-center {
+    display: flex;
+    justify-content: space-between;
+    &__text {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &__number {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    &__numbers {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 8px;
     }
 }

@@ -2,6 +2,14 @@
     .container {
         max-width: 960px;
     }
+    .slider {
+        &__img {
+            height: 100%;
+        }
+    }
+    .slider {
+        width: 600px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -27,6 +35,29 @@
         &__logo {
             width: 130px;
         }
+    }
+    .hotel {
+        &-grid {
+            flex-direction: column;
+        }
+        &-info {
+            &__right {
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+            &__map {
+                margin-top: 0;
+            }
+        }
+    }
+    .slider {
+        width: 100%;
+    }
+    .booking, .map {
+        max-width: 340px;
     }
 }
 
@@ -72,15 +103,36 @@
             &__title {
                 flex-basis: 100%;
             }
+            &__right {
+                flex-direction: column;
+            }
         }
     }
+    .swiper {
+        height: 20%;
+    }
     .stars {
-        flex-basis: content !important;
+        flex-basis: content;
+    }
+    .newsletter {
+        &-wrapper {
+            flex-direction: column;
+            align-items:start;
+        }
+    }
+    .subscribe {
+        width: 100%;
+        &__input {
+            width: 100%;
+        }
     }
 }
 
 @media (max-width: 576px) {
     .logo {
         width: 99px;
+    }
+    .swiper {
+        height: 25%;
     }
 }

@@ -15,8 +15,11 @@ body {
 img {
     max-width: 100%;
 }
-button {
+.button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    &__text {
+        color: #fff;
+    }
 }
