@@ -10,6 +10,13 @@
     .slider {
         width: 600px;
     }
+    .cards {
+        &-card {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -59,6 +66,17 @@
     .booking, .map {
         max-width: 340px;
     }
+    .cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-card {
+            width: 49%;
+            margin-bottom: 20px;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -106,6 +124,9 @@
             &__right {
                 flex-direction: column;
             }
+            &__map {
+                margin-top: 20px;
+            }
         }
     }
     .swiper {
@@ -126,6 +147,11 @@
             width: 100%;
         }
     }
+    // .cards {
+    //     &-card {
+    //         width: 100%;
+    //     }
+    // }
 }
 
 @media (max-width: 576px) {
@@ -134,5 +160,10 @@
     }
     .swiper {
         height: 25%;
+    }
+    .cards {
+        &-card {
+            width: 100%;
+        }
     }
 }
