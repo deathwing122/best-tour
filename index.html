@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header class="header">
+   <header class="header header--mobile_fixed">
     <div class="container">
         <div class="header-top">
             <img src="img/logo.svg" alt="" class="logo header__logo">
-            <form action="" class="search header__search">
+            <form action="" class="search header__search header__search--mobile_hidden">
                 <input type="text" class="search__input" placeholder="Search Location |">
                 <button class="button search__button"><img src="img/search.svg" alt=""></button>
             </form>
-            <div class="user header__user">
+            <div class="user header__user header__user--mobile_hidden">
                 <img src="img/avatar.jpg" alt="" class="user__img">
                 <span class="user__name">Nathan</span>
             </div>
@@ -36,6 +36,18 @@
     <nav class="header-navbar">
         <div class="container">
             <ul class="header-menu">
+                <li class="header-menu__item header-menu__item--mobile_hidden">
+                    <div class="user header__user header__user--mobile_visible">
+                        <img src="img/avatar.jpg" alt="" class="user__img">
+                        <span class="user__name user__name--light">Nathan</span>
+                    </div>
+                </li>
+                <li class="header-menu__item header-menu__item--mobile_hidden">
+                    <form action="" class="search header__search header__search--mobile_visible">
+                        <input type="text" class="search__input" placeholder="Search Location |">
+                        <button class="button search__button"><img src="img/search.svg" alt=""></button>
+                    </form>
+                </li>
                 <li class="header-menu__item"><a href="" class="header-menu__link">All Deals</a></li>
                 <li class="header-menu__item"><a href="" class="header-menu__link">Hotels</a></li>
                 <li class="header-menu__item"><a href="" class="header-menu__link">Activities</a></li>

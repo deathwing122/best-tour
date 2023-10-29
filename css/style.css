@@ -560,6 +560,7 @@ template {
 }
 .header-menu {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   list-style: none;
   padding: 0;
@@ -571,6 +572,9 @@ template {
 .header-menu__link {
   text-decoration: none;
   color: #FFF;
+}
+.header-menu__item--mobile_hidden {
+  display: none;
 }
 
 .logo {
@@ -614,7 +618,9 @@ template {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  margin-right: 18px;
+}
+.user__name {
+  margin-left: 18px;
 }
 
 .reviews__title {
@@ -919,8 +925,53 @@ template {
     max-width: 576px;
     max-width: 92%;
   }
-  .header__search, .header__user, .header-navbar {
+  body {
+    padding-top: 78px;
+  }
+  .header--mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .header__search--mobile_hidden, .header__user--mobile_hidden {
     display: none;
+  }
+  .header__search--mobile_visible, .header__user--mobile_visible {
+    display: flex;
+  }
+  .header__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-navbar {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 78px;
+    right: 0;
+    bottom: 0;
+    padding-top: 38px;
+  }
+  .header-navbar--active {
+    display: block;
+  }
+  .header-menu {
+    flex-direction: column;
+  }
+  .header-menu__item {
+    margin-bottom: 20px;
+  }
+  .header-menu__item--mobile_hidden {
+    display: block;
+  }
+  .user__name {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .user__name--light {
+    color: #fff;
   }
   .menu-button {
     display: flex;

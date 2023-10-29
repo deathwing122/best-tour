@@ -19,3 +19,9 @@ const swiperRew = new Swiper('.reviews__swiper', {
 		prevEl: '.reviews-slider__button--prev',
 	},
 })
+
+var menuButton = document.querySelector(".menu-button")
+
+menuButton.addEventListener("click", function (e) {
+	document.querySelector(".header-navbar").classList.toggle("header-navbar--active")
+})
